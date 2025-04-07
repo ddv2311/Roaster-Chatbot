@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 9%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 33% 9%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 33% 9%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 24 94% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 33% 9%;
+
+    --muted: 220 14% 20%;
+    --muted-foreground: 220 14% 65%;
+
+    --accent: 220 14% 20%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 20%;
+    --input: 220 14% 20%;
+    --ring: 24 94% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-roast-dark text-roast-light font-sans;
+    background-image: radial-gradient(circle at top right, rgba(249, 115, 22, 0.12), transparent 45%), 
+                      radial-gradient(circle at bottom left, rgba(234, 56, 76, 0.12), transparent 45%);
+    min-height: 100vh;
+  }
+}
+
+.fire-gradient {
+  background: linear-gradient(135deg, #F97316 0%, #EA384C 100%);
+}
+
+.fire-text {
+  background: linear-gradient(135deg, #F97316 0%, #EA384C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
