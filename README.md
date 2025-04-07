@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# Roaster-Chatbot
 
-## Project info
 
-**URL**: https://lovable.dev/projects/a14f4ee2-3794-4080-8fb6-fd92ba9063be
+A MERN stack web application that uses AI to generate savage, hilarious roasts on demand. Input a target—like "my friend Jake who loves video games"—and watch the Roastmaster deliver a unique, dynamically generated burn every time. Powered by generative AI and built with MongoDB, Express.js, React, and Node.js.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Dynamic Roasts:** AI crafts fresh, context-aware roasts based on user input—no static templates.
+- **Simple UI:** Clean React interface with an input field and instant roast output.
+- **Scalable Backend:** Express server integrates with Hugging Face's Inference API for AI generation.
+- **Fun & Interactive:** Perfect for roasting friends, objects, or anything you can think of!
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a14f4ee2-3794-4080-8fb6-fd92ba9063be) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- **Frontend:** React, CSS, Axios
+- **Backend:** Node.js, Express.js, Hugging Face API (GPT-2)
+- **Database:** MongoDB (optional, not implemented yet)
+- **Tools:** npm, Git, Nodemon
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Prerequisites
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Node.js:** v16+ (includes npm)
+- **Git:** For cloning and version control
+- **Hugging Face API Key:** Sign up at [huggingface.co](https://huggingface.co) to get one
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/ddv2311/Roaster-Chatbot.git
+cd Roaster-Chatbot
 ```
 
-**Edit a file directly in GitHub**
+### 2. Create a .env file with content
+```bash
+PORT=5000
+HUGGING_FACE_API_KEY=your_hugging_face_api_key_here
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3.install dependencies and run app
+```bash
+npm i
+npm run dev
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a14f4ee2-3794-4080-8fb6-fd92ba9063be) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
